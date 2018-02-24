@@ -7,7 +7,6 @@ body {
 }
 .container {
   width: 1260px;
-  /* height: 2000px; */
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
@@ -39,7 +38,6 @@ p {
 }
 .first-screen {
   width: 100%;
-  /* min-height: 680px; */
   padding-top: 20px;
   background: url(../img/head-bg-picture.jpg) no-repeat top center;
   background-size: auto;
@@ -53,7 +51,6 @@ p {
           align-items: center;
   margin-bottom: 86px;
   height: 70px;
-  /* outline: 1px solid orange; */
 }
 .header .header-logo {
   width: 206px;
@@ -83,8 +80,6 @@ p {
 }
 .column-left {
   width: 610px;
-  /* min-height: 700px; */
-  /* outline: 1px solid red; */
 }
 .column-left .column-left__title {
   margin: 0;
@@ -127,8 +122,6 @@ p {
           justify-content: flex-end;
   padding-top: 14px;
   width: 610px;
-  /* height: 600px; */
-  /* outline: 1px solid red; */
 }
 .column-right .column-right__form {
   position: relative;
@@ -139,13 +132,10 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  /* justify-content: flex-start; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 41px;
-  /* padding-left: 50px; */
-  /* padding-right: 49px; */
   width: 355px;
   height: 369px;
   background: #fff;
@@ -202,18 +192,6 @@ p {
   text-align: left;
 }
 .features {
-  padding: 90px 10px 138px;
-  background: #fff;
-  color: #1a1820;
-}
-.features .features__title {
-  margin: 0;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 119px;
-}
-.features .features-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,6 +201,22 @@ p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 90px 10px 138px;
+  background: #fff;
+  color: #1a1820;
+}
+.features .features__title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0;
+  margin-bottom: 119px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
 }
 .features-item {
   width: 300px;
@@ -251,8 +245,4 @@ p {
 .features-item .features-item__text .features-item__text-link {
   text-decoration: none;
   color: #4aa223;
-}
-.green {
-  min-height: 500px;
-  background: lightgreen;
 }
