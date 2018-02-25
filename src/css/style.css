@@ -12,12 +12,16 @@ body {
   padding-right: 10px;
   outline: 1px solid black;
 }
+.title-section {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
 p {
   margin: 0;
 }
 .btn {
-  width: 257px;
-  height: 65px;
   border: 1px solid #ffbb11;
   border-radius: 8px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f5ad00), to(#ffb504));
@@ -191,6 +195,7 @@ p {
   left: 31px;
   text-align: left;
 }
+/* Блок features */
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,9 +219,6 @@ p {
       flex-basis: 100%;
   margin: 0;
   margin-bottom: 119px;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
 }
 .features-item {
   width: 300px;
@@ -245,4 +247,96 @@ p {
 .features-item .features-item__text .features-item__text-link {
   text-decoration: none;
   color: #4aa223;
+}
+/* Блок Price */
+.price {
+  min-height: 1000px;
+  background: url(../img/price-bg.jpg) repeat top left;
+  color: #fff;
+  text-align: center;
+}
+.price-heading {
+  position: relative;
+  margin-bottom: 88px;
+}
+.price-heading .price-title {
+  padding-top: 111px;
+  padding-bottom: 39px;
+}
+.price-heading .price-subtitle {
+  font-size: 18px;
+  word-spacing: 1px;
+}
+.price-heading .price-heading-btn {
+  position: absolute;
+  top: 122px;
+  right: 0;
+  display: inline-block;
+  padding: 0px 23px 0px 32px;
+  font-size: 18px;
+  line-height: 63px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.price-items-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.price-item {
+  /* display: flex; */
+  padding-top: 27px;
+  width: 400px;
+  min-height: 500px;
+  background: #fff;
+  color: #1a1820;
+  outline: 1px solid green;
+}
+.price-item .price-item__title {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.price-item .price-item__img {
+  margin-bottom: 25px;
+}
+.price-item .price-item__cost {
+  margin-bottom: 17px;
+  color: #1a1820;
+  font: bold 19px/32px "Proxima Nova", Arial, sans-serif;
+  text-align: center;
+}
+.price-item .price-item__cost span {
+  font-size: 30px;
+  /* font-weight: bold; */
+}
+.price-item .price-item__list {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  list-style-type: none;
+}
+.price-item .price-item__list .price-item__list-item::before {
+  margin-left: -36px;
+  margin-top: 12px;
+  padding-left: 36px;
+  content: '';
+  width: 11px;
+  height: 9px;
+  background: url(../img/check-icon.png) no-repeat center;
+}
+.price-item .price-item__btn {
+  margin-top: 16px;
+  margin-bottom: 45px;
+  padding: 20px 59px 21px;
+  font: 18px "Proxima Nova Semibold", Arial, sans-serif;
 }
