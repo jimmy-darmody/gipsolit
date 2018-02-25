@@ -292,7 +292,19 @@ p {
           flex-flow: row wrap;
 }
 .price-item {
-  /* display: flex; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 27px;
   width: 400px;
   min-height: 500px;
@@ -306,7 +318,7 @@ p {
   margin-bottom: 32px;
 }
 .price-item .price-item__img {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .price-item .price-item__cost {
   margin-bottom: 17px;
@@ -316,10 +328,10 @@ p {
 }
 .price-item .price-item__cost span {
   font-size: 30px;
-  /* font-weight: bold; */
 }
 .price-item .price-item__list {
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   font-size: 18px;
   line-height: 30px;
@@ -335,7 +347,8 @@ p {
   background: url(../img/check-icon.png) no-repeat center;
 }
 .price-item .price-item__btn {
-  margin-top: 16px;
+  /* align-self: flex-end; */
+  margin-top: auto;
   margin-bottom: 45px;
   padding: 20px 59px 21px;
   font: 18px "Proxima Nova Semibold", Arial, sans-serif;
